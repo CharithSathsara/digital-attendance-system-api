@@ -14,6 +14,8 @@ import enrollmentRoutes from "./routes/enrollment.routes";
 
 export const app = express();
 
+app.set("trust proxy", 1);
+
 app.disable("x-powered-by");
 
 app.use(
